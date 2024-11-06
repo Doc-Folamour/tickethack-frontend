@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <link href="style.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tickethack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="container">
@@ -12,13 +15,13 @@
         <div id="logo-container">
           <h1>Tickethack</h1>
         </div>
-        <div id="menu" class="font">
-            <button type="button" id="booking" class="btn-menu">bookings</button>
-          <button type="button" id="cart" class="btn-menu">cart</button>
+        <div id="menu">
+          <a href = "./panier.html"><button type="button" id="cart" class="btn-menu">Cart</button></a>
+          <a href = "./booking.html"><button type="button" id="booking" class="btn-menu">Bookings</button></a>
         </div>
       </div>
-      <div id="background">
-        <div id="slogan" class="font">
+      <div id="background-img">
+        <div id="slogan" class="white">
           <h2>Explore the world effortlessly by train!</h2>
           <h3>
             Compare, book and enjoy cheap prices for train tickets: your journey
@@ -31,6 +34,7 @@
               <input id="add-departure" class="field" type="text" placeholder="Departure" />
               <input id="add-arrival" class="field" type="text" placeholder="Arrival" />
               <input
+                id="add-date"
                 type="date"
                 name="start-trip"
                 required
@@ -41,7 +45,7 @@
           </div>
           <div id="content-right">
             <div id="result-trip">
-              <img id="train" src="../frontend/images/train.png" />
+              <img id="train" src="./images/train.png" />
               <p>It's time to book your future trip</p>
             </div>
           </div>
